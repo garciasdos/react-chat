@@ -1,0 +1,7 @@
+.messages {
+    grid-area: messages;
+    display: grid;
+    grid-template-areas: "header" "body" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto 75px;
+}
