@@ -6,7 +6,7 @@ const Conversations = (props) => {
     return (
         <section className='conversations'>
             {props.data.map((Conver) => {
-                return <Conversation key={Conver.id} label={Conver.name}  id={Conver.id} onClick={props.onClick}/>
+                return <Conversation key={Conver.id} label={Conver.name} id={Conver.id} onClick={props.onClick}/>
             })
             }
         </section>
