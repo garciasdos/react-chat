@@ -1,8 +1,8 @@
 import React from 'react';
 import "./Messages.css";
-import MessagesHeader from "../MessagesHeader/MessagesHeader";
-import MessagesFooter from "../MessagesFooter/MessagesFooter";
-import MessagesBody from "../MessagesBody/MessagesBody";
+import MessagesHeader from "./MessagesHeader/MessagesHeader";
+import MessagesFooter from "./MessagesFooter/MessagesFooter";
+import MessagesBody from "./MessagesBody/MessagesBody";
 
 const Message = (props) => {
     return (

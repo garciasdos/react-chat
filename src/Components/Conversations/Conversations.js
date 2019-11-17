@@ -1,5 +1,5 @@
 import React from 'react';
-import Conversation from '../Conversation/Conversation';
+import Conversation from './Conversation/Conversation';
 import "./Conversations.css";
 
 const Conversations = (props) => {
