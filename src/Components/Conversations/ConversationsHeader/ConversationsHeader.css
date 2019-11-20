@@ -2,10 +2,15 @@
     grid-area: header;
     display: flex;
     align-items: center;
+    background-color: #455a64;
+    border-bottom: 1px solid #405052;
     justify-content: center;
 }
 
 .conversationHeader-input {
     width: 70%;
     height: 20px;
+    background-color: #eceff1;
+    border: 0;
+    padding: 0;
 }
