@@ -13,7 +13,31 @@ const chatDefault = {
         {
             name: 'Aznar',
             id: 3
-        }
+        },
+        {
+            name: 'Diego',
+            id: 4
+        },
+        {
+            name: 'Javier',
+            id: 5
+        },
+        {
+            name: 'Aznar',
+            id: 6
+        },
+        {
+            name: 'Diego',
+            id: 7
+        },
+        {
+            name: 'Javier',
+            id: 8
+        },
+        {
+            name: 'Aznar',
+            id: 9
+        },
     ]
 };
 
