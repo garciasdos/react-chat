@@ -1,0 +1,11 @@
+.conversationHeader {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conversationHeader-input {
+    width: 70%;
+    height: 20px;
+}

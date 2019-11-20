@@ -1,16 +1,38 @@
 import React from 'react';
 import Conversation from './Conversation/Conversation';
+import ConversationsHeader from './ConversationsHeader/ConversationsHeader';
 import "./Conversations.css";
 
-const Conversations = (props) => {
-    return (
-        <section className='conversations'>
-            {props.data.map((Conver) => {
-                return <Conversation key={Conver.id} label={Conver.name} id={Conver.id} onClick={props.onClick}/>
-            })
-            }
-        </section>
-    );
+class Conversations extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            filter: ''
+        }
+    };
+
+    setFilter = (value) => {
+        this.setState({
+            filter: value
+        })
+    };
+
+    renderConversations = () => {
+        return this.props.data
+            .filter(Conver => Conver.name.includes(this.state.filter))
+            .map(Conver =>  <Conversation key={Conver.id} label={Conver.name} id={Conver.id} onClick={this.props.onClick}/>)
+    };
+
+    render() {
+        return (
+            <section className='conversations'>
+                <ConversationsHeader onChange={this.setFilter}/>
+                <div className='conversations-scroller'>
+                    {this.renderConversations()}
+                </div>
+            </section>
+        );
+    }
 };
 
 export default Conversations;

@@ -1,7 +1,14 @@
 .conversations {
     grid-area: conversations;
+    display: grid;
     background-color: white;
-    flex-direction: column;
+    grid-template-areas: "header" "body";
+    grid-template-rows: 100px auto;
+    grid-template-columns: auto;
+}
+
+.conversations-scroller {
+    grid-area: body;
     overflow-y: scroll;
     overflow-x: hidden;
 }
