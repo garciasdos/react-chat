@@ -9,7 +9,10 @@ const Conversation = (props) => {
             props.onClick();
             props.dispatch(setConverSelected(props.label, props.id));
         }}>
-            <p className='conversation-label'>{props.label}</p>
+            <div className='conversationContainer'>
+                <div className='conversation-userPicture'></div>
+                <p className='conversation-label'>{props.label}</p>
+            </div>
         </div>
     );
 };
