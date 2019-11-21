@@ -1,3 +1,3 @@
 .messagesHeader {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--basic-color);
 }

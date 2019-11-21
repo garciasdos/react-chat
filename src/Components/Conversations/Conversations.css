@@ -10,7 +10,7 @@
 
 .conversations-scroller {
     grid-area: body;
-    background-color: #455a64;
+    background-color: var(--principal-color);
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -21,17 +21,17 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: #455a64;
+    background: var(--principal-color);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #718792;
+    background: var(--principal-color-lighter);
     border-radius: 14px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #607d8b;
+    background: var(--principal-color-light);
 }
 
