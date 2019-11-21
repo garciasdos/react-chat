@@ -44,8 +44,8 @@ const chatDefault = {
 export const chatReducer = (state = chatDefault, action) => {
     switch (action.type) {
         case 'ADD_CONVERSATION':
-            let newConversations = state.conversations;
-            newConversations.push(action.conversation);
+            let newConversations = [action.conversation];
+            newConversations = newConversations.concat(state.conversations);
             return {
                 ...state,
                 conversations: newConversations
