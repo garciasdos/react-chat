@@ -19,7 +19,7 @@ class Conversations extends React.Component {
 
     renderConversations = () => {
         return this.props.data
-            .filter(Conver => Conver.name.toLowerCase().includes(this.state.filter))
+            .filter(Conver => Conver.name.toLowerCase().includes(this.state.filter.toLowerCase()))
             .map(Conver =>  <Conversation key={Conver.id} label={Conver.name} id={Conver.id} onClick={this.props.onClick}/>)
     };
 
