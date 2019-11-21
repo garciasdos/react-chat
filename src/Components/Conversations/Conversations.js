@@ -17,6 +17,12 @@ class Conversations extends React.Component {
         })
     };
 
+    resetFilter = () => {
+        this.setState({
+            filter: ''
+        })
+    };
+
     renderConversations = () => {
         let conver = this.props.data
             .filter(Conver => Conver.name.toLowerCase().includes(this.state.filter.toLowerCase()))
@@ -25,13 +31,12 @@ class Conversations extends React.Component {
         } else {
             return <NoConvers/>
         }
-
     };
 
     render() {
         return (
             <section className='conversations'>
-                <ConversationsHeader onChange={this.setFilter}/>
+                <ConversationsHeader onChange={this.setFilter} filter={this.state.filter} resetFilter={this.resetFilter}/>
                 <div className='conversations-scroller'>
                     {this.renderConversations()}
                 </div>

@@ -7,11 +7,45 @@
     justify-content: center;
 }
 
-.conversationHeader-input {
-    width: 70%;
+.filterConver {
+    width: 85%;
+    border-radius: 15px;
+    background-color: var(--principal-color-lightest);;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterConver-input {
+    width: 76%;
     height: 27px;
     background-color: var(--principal-color-lightest);
     border: 0;
     padding: 0 0 0 5px;
     outline: none;
+    font-size: 14px;
+}
+
+.filterConver-button {
+    height: 27px;
+    width: 27px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    background-position: center;
+    outline: none;
+    cursor: pointer;
+}
+
+.filterConver-button--search {
+    background-image: url("./../../../assets/img/search.svg");
+    transition: 0.2s;
+}
+
+
+.filterConver-button--remove {
+    background-image: url("./../../../assets/img/remove.svg");
+    transform: rotate(90deg);
+    transition: 0.2s;
 }
