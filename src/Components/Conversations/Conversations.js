@@ -18,9 +18,14 @@ class Conversations extends React.Component {
     };
 
     renderConversations = () => {
-        return this.props.data
+        let conver = this.props.data
             .filter(Conver => Conver.name.toLowerCase().includes(this.state.filter.toLowerCase()))
-            .map(Conver =>  <Conversation key={Conver.id} label={Conver.name} id={Conver.id} onClick={this.props.onClick}/>)
+        if(conver.length > 0) {
+            return conver.map(Conver =>  <Conversation key={Conver.id} label={Conver.name} id={Conver.id} onClick={this.props.onClick}/>)
+        } else {
+            return <NoConvers/>
+        }
+
     };
 
     render() {
@@ -34,5 +39,13 @@ class Conversations extends React.Component {
         );
     }
 };
+
+const NoConvers = () => {
+    return(
+        <div className='conversations-noConver'>
+            <h1>No conversation found</h1>
+        </div>
+    );
+}
 
 export default Conversations;
