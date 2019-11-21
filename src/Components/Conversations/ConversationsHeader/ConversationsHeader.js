@@ -10,7 +10,7 @@ class ConversationHeader extends React.Component {
     render() {
         return (
             <div className='conversationHeader'>
-                <input className='conversationHeader-input' onChange={this.onChangeInput}/>
+                <input className='conversationHeader-input' placeholder='Search conversation' onChange={this.onChangeInput}/>
             </div>
         );
     }
