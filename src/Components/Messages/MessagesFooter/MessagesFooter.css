@@ -17,6 +17,7 @@
     border: 1px solid var(--basic-color);
     outline: none;
     padding: 0 15px;
+    font-size: 14px;
 }
 
 .messagesFooter-button {
@@ -33,4 +34,10 @@
     background-color: transparent;
     cursor: pointer;
     outline: none;
+    transition: 0.2s ease-out;
+}
+
+.messagesFooter-button:hover {
+    width: 45px;
+    transition: 0.2s ease-out;
 }
