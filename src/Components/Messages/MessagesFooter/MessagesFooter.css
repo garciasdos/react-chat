@@ -1,10 +1,36 @@
 .messagesFooter {
     grid-area: footer;
-    background-color: #09d3ac;
     display: grid;
     grid-template-areas:"input button";
-    grid-template-columns: auto 35px;
-    grid-column-gap: 10px;
+    grid-template-columns: auto 100px;
     grid-template-rows: 1fr;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--basic-color);
+    background-color: var(--basic-color-light);
+}
+
+.messagesFooter-input {
+    width: 90%;
+    justify-self: end;
+    height: 50%;
+    align-self: center;
+    border-radius: 21px;
+    border: 1px solid var(--basic-color);
+    outline: none;
+    padding: 0 15px;
+}
+
+.messagesFooter-button {
+    background-image: url("./../../../assets/img/send.svg");
+    margin: 0;
+    border: 0;
+    height: 35px;
+    width: 35px;
+    align-self: center;
+    justify-self: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
 }
