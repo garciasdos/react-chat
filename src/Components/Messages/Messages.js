@@ -33,8 +33,8 @@ class Message extends React.Component {
     render() {
         return (
             <section className='messages'>
-                <MessagesHeader label={this.props.label}/>
-                <MessagesBody/>
+                <MessagesHeader label={this.props.conversation.name}/>
+                <MessagesBody conversation = {this.props.conversation.conversation}/>
                 <MessagesFooter messageToSend={this.state.messageToSend} onChange={this.setMessageToSend}
                                 sendData={this.sendData} resetValue={this.resetMessage}/>
             </section>
